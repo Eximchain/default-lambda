@@ -1,0 +1,25 @@
+{
+  "name": "default-lambda",
+  "version": "0.0.1",
+  "description": "AWS Lambda function default",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "chmod 744 ./build-bundle.sh",
+    "build": "./build-bundle.sh default-lambda.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eximchain/default-lambda.git"
+  },
+  "author": "Louis Lamia",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Eximchain/default-lambda/issues"
+  },
+  "homepage": "https://github.com/Eximchain/default-lambda#readme",
+  "dependencies": {
+    "@types/node": "^12.7.3",
+    "aws-sdk": "^2.424.0"
+  }
+}
